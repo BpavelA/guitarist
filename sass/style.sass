@@ -1,7 +1,7 @@
 *
  padding: 0
  margin: 0
- box-sizing: 0
+ box-sizing: border-box
 
 $color-blue: #5290EA
 $color-orange: #F28B64
@@ -15,7 +15,7 @@ $background-color: #F0F0F0
 .main-section
  min-height: 800px
  background-color: $background-color
- padding-top: 16px 
+ padding-top: 16px
  &__logo
   width: 152px
  &__nav-container
@@ -23,6 +23,9 @@ $background-color: #F0F0F0
   justify-content: space-between
   align-items: center
   height: 70px
+ &__content-container
+  display: flex
+
 
 .nav-menu
  &__list
@@ -35,3 +38,40 @@ $background-color: #F0F0F0
   a
    text-decoration: none
 
+.left-wrapper
+  position: relative
+  &__rectangle-blue
+    position: absolute
+    height: 220px
+    width: 560px
+    background-color: $color-blue
+    transform: rotate(-64deg)
+    top: 140px
+    left: -50px
+    border-radius: 100px
+    z-index: 1
+  &__rectangle-orange
+    position: absolute
+    height: 220px
+    width: 620px
+    background-color: $color-orange
+    transform: rotate(-51deg)
+    top: 160px
+    left: -35px
+    border-radius: 100px
+    z-index: 3
+  &__rectangle-grey
+    position: absolute
+    height: 220px
+    width: 610px
+    background-color: $color-grey
+    transform: rotate(-36deg)
+    top: 195px
+    left: 15px
+    border-radius: 100px
+    z-index: 2
+  &__img
+    position: relative
+    z-index: 4
+    width: 880px
+  
