@@ -27,6 +27,14 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
  &__content-container
   display: flex
   position: relative
+ &__first-ring
+  position: absolute
+  top: 120px 
+  right: 0
+ &__second-ring
+  position: absolute
+  bottom: -150px
+  right: -70px 
 
 .nav-menu
  &__list
@@ -99,11 +107,12 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
 .right-wrapper
   position: absolute
   width: 320px
-  right: 0
+  right: 80px
   top: 125px
   &__text
     font-size: 16px
     margin-bottom: 20px
+  
 
 .buttons
   display: flex
@@ -132,3 +141,29 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
         transform: scale(110%)
   &__text
     font-size: 16px
+
+.ring
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 194px
+  width: 194px
+  border-radius: 50%
+  background-image: linear-gradient(144deg, #ed7a508a 0%, #4889ea89 54%, #2c2c2c82 100%)
+  &_big
+    height: 285px
+    width: 285px
+    &::before
+      display: block
+      content: ""
+      height: 188px
+      width: 188px
+      background-color: $background-color
+      border-radius: 50%
+  &::before
+    display: block
+    content: ""
+    height: 130px
+    width: 130px
+    background-color: $background-color
+    border-radius: 50%
