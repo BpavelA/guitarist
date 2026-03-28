@@ -17,6 +17,8 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
  min-height: 800px
  background-color: $background-color
  padding-top: 16px
+ overflow: hidden
+ position: relative
  &__logo
   width: 152px
  &__nav-container
@@ -33,8 +35,8 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
   right: 0
  &__second-ring
   position: absolute
-  bottom: -200px
-  right: -70px 
+  bottom: -100px
+  right: -70px
 
 .nav-menu
  &__list
@@ -161,9 +163,22 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
     height: 285px
     width: 285px
     &::before
-      // display: block
-      // content: ""
       height: 190px
       width: 190px
-      // background-color: $background-color
-      // border-radius: 50%
+
+.section-courses
+  min-height: 700px
+  position: relative
+  overflow: hidden
+  &__container
+    padding-top: 30px
+  &__title
+    padding-bottom: 40px
+  &__cards-box
+    display: flex
+    gap: 30px
+  &__icons-box
+    display: flex
+    gap: 50px
+
+
