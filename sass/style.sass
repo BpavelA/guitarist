@@ -159,12 +159,16 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
     width: 130px
     background-color: $background-color
     border-radius: 50%
+  &_white
+    &::before
+      background-color: white
   &_big
     height: 285px
     width: 285px
     &::before
       height: 190px
       width: 190px
+  
 
 .section-courses
   min-height: 700px
@@ -177,8 +181,51 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
   &__cards-box
     display: flex
     gap: 30px
+    margin-bottom: 25px
   &__icons-box
     display: flex
-    gap: 50px
+    justify-content: space-evenly
+  &__first-ring
+    position: absolute
+    top: 370px
+    left: 70px
+    z-index: -1
+  &__second-ring
+    position: absolute
+    top: 45px
+    right: 70px
+    z-index: -1
 
 
+.cards-item
+  height: 360px
+  width: 360px
+  border-radius: 10px
+  position: relative
+  display: flex
+  align-items: flex-end
+  &_grey
+    background-color: $color-grey
+  &_orange
+    background-color: $color-orange
+  &_blue
+    background-color: $color-blue
+  &__text
+    font-size: 36px
+    font-weight: 600
+    width: 280px
+    transform: rotate(90deg)
+    text-align: center
+    position: absolute
+    top: 144px
+    right: -50px
+
+.icons-item
+  display: flex
+  align-items: center
+  gap: 20px
+  &__text
+    font-size: 18px
+    span
+      font-size: 48px
+      font-weight: 600
