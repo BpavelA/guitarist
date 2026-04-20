@@ -9,6 +9,18 @@ $color-grey: #E2E2E2
 $background-color: #F0F0F0
 $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
 
+@font-face
+  font-family: Montserrat-Regular
+  src: url(fonts/Montserrat-Regular.ttf)
+
+@font-face
+  font-family: Montserrat-SemiBold
+  src: url(fonts/Montserrat-Regular.ttf)
+
+body
+  font-family: Montserrat-SemiBold
+
+
 .container
  max-width: 1140px
  margin: 0 auto
@@ -249,13 +261,14 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
 
 
 .section-learning
-  min-height: 700px
+  min-height: 600px
   background: $background-color
   overflow: hidden
   &__container
     display: flex
     justify-content: space-between
     align-items: center
+    padding-top: 50px
   &__right-wrapper
     max-width: 500px
     position: relative
@@ -263,7 +276,7 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
     position: relative
   &__first-ring
     position: absolute
-    top: 0
+    top: -130px
     left: 100px
   &__second-ring
     position: absolute
@@ -271,6 +284,15 @@ $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
     right: -300px
   &__img
     position: absolute
-    top: 100px
+    top: -30px
     left: 0
     z-index: 1
+  &__left-title
+    position: relative
+    margin-bottom: 20px
+    padding-left: 150px
+  &__title
+    margin-bottom: 20px
+  &__text
+    margin-bottom: 30px
+    font-size: 18px
