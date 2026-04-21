@@ -94,13 +94,33 @@
   &__title
    font-size: 5rem
  
-// @media (max-width: 580px)
+@media (max-width: 580px)
+  .main-section
+    &__first-ring
+      display: none
+  .left-wrapper
+    &__img
+      display: none
+  .right-wrapper
+    left: 13rem
+  .footer
+    &__container
+      justify-content: center
+    &__img
+      display: none
+  .cards-item
+    &__text
+      transform: rotate(90deg)
+      width: 30rem
 
- // html
- //  font-size: 7px
- // .cards-item
- //  &__img
- //   height: 75%
- // .footer
- //  &__img
- //   height: 75%
+@media (max-width: 440px)
+  .right-wrapper
+    left: 10rem
+  .icons-item
+    &__text
+      font-size: 1.1rem
+      span
+        font-size: 4.3rem
+  .cards-item
+    &__text
+      width: 25rem
