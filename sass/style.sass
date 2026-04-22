@@ -329,6 +329,9 @@ body
   text-align: center
   cursor: pointer
   gap: .9rem
+  position: fixed
+  top: 4rem
+  right: 0
   .line
     background-color: black
     height: .3rem
@@ -348,19 +351,19 @@ body
       display: none
 
 .mobile-menu
-  display: none
   flex-direction: column
   text-align: center
   justify-content: center
   gap: 2rem
-  position: absolute
+  position: fixed
   top: 0
-  right: 0
+  right: -100%
   background-color: rgba(255, 255, 255, 0.7)
-  width: 50vw
+  width: 50%
   height: 100vh
   z-index: 2
   backdrop-filter: blur(10px)
+  transition: .4s all
   a
     text-transform: uppercase
     font-size: 4rem
@@ -369,3 +372,4 @@ body
   
 .active
   display: flex
+  right: 0
