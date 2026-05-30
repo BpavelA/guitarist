@@ -321,3 +321,27 @@ body
     line-height: 105%
     margin-bottom: 2rem
     
+.hamburger
+  display: flex
+  flex-direction: column
+  gap: .9rem
+  cursor: pointer
+  padding-right: 3rem
+  text-align: center
+
+.line
+  height: .3rem
+  width: 5rem
+  background-color: black
+
+.hamburger_active
+  .line
+    &:nth-child(1)
+      transform-origin: 0 0
+      transform: rotate(45deg) translateY(-1.5rem) translateX(-0.5rem)
+    &:nth-child(3)
+      transform-origin: 0 0
+      transform: rotate(-45deg) translateY(1.1rem) translateX(-0.4rem)
+    &:nth-child(2)
+      display: none
+      
